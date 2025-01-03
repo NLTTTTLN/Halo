@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HintTextSize" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>  <!-- Điều chỉnh kích thước của hint -->
+        <item name="android:textColorHint">#BBBBBB</item> <!-- Thay đổi màu của hint nếu cần -->
+    </style>
+</resources>

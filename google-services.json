@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "672627323618",
+    "project_id": "halo-5d695",
+    "storage_bucket": "halo-5d695.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672627323618:android:11cb1318d95e97648ae4bb",
+        "android_client_info": {
+          "package_name": "com.example.messageapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSlgcRcDuE1tpj5Q3NZklwrhJSVQMtfNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

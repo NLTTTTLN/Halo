@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#000000"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/rounded_background"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng Nhập"
+                android:textSize="32sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:layout_marginBottom="40dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="#BBBBBB"
+                android:textColor="#000000"
+                android:background="@drawable/edittext_background"
+                android:padding="16dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                android:textColorHint="#BBBBBB"
+                android:textColor="#000000"
+                android:background="@drawable/edittext_background"
+                android:padding="16dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="40dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng Nhập"
+                android:textColor="@android:color/white"
+                android:background="@drawable/loginbutton_background"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:background="@drawable/registerbutton_background"
+                android:onClick="navigateToRegister"
+                android:padding="16dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>
