@@ -49,6 +49,12 @@ public class RegisterActivity extends AppCompatActivity {
                 return;
             }
 
+            // Kiểm tra nếu bất kỳ trường nào bị bỏ trống
+            if (email.isEmpty() || password.isEmpty() || retypePassword.isEmpty()) {
+                Toast.makeText(this, "Vui lòng nhập đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             authViewModel.register(email, password).observe(this, success -> {
                 if (success) {
                     Toast.makeText(this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000000">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#1E1E1E"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tin nhắn"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:gravity="left"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <!-- Thanh tìm kiếm -->
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Tìm kiếm..."
+            android:textColorHint="#BBBBBB"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/searchbar_background"
+            android:padding="3dp"
+            android:inputType="text"
+            android:drawableLeft="@android:drawable/ic_search_category_default"
+            android:textSize="16sp" />
+        <!-- Danh sách tin nhắn -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMessages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+        <!-- Bottom Navigation -->
+        <include
+            android:id="@+id/bottomNav"
+            layout="@layout/bottom_nav" />
+
+    </LinearLayout>
+</layout>

@@ -17,19 +17,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Messageapp"
         tools:targetApi="31" >
+
     <!-- MainActivity phải có action MAIN và category LAUNCHER -->
-    <activity android:name=".ui.LoginActivity"
-              android:exported="true"
-        android:theme="@style/AppTheme">
+        <activity   android:name=".ui.LoginActivity"
+                    android:exported="true"
+                    android:theme="@style/AppTheme">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-    </activity>
+        </activity>
+
         <activity
-            android:name=".ui.RegisterActivity"
-            android:theme="@style/AppTheme">
-    </activity>
+                android:name=".ui.RegisterActivity"
+                android:theme="@style/AppTheme">
+        </activity>
+
+        <activity android:name=".ui.MessagesActivity">
+            <!-- Cài đặt khác nếu cần -->
+        </activity>
+
+        <activity android:name=".ui.ContactsActivity">
+            <!-- Cài đặt khác nếu cần -->
+        </activity>
+
+        <activity android:name=".ui.AddFriendActivity">
+            <!-- Cài đặt khác nếu cần -->
+        </activity>
+
+        <activity android:name=".ui.CompleteProfileActivity">
+            <!-- Cài đặt khác nếu cần -->
+        </activity>
+
     </application>
 
 </manifest>

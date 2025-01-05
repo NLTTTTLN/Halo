@@ -1,4 +1,3 @@
-// AuthViewModel.java
 package com.example.messageapp.features.authentication;
 
 import androidx.lifecycle.LiveData;
@@ -12,6 +11,7 @@ public class AuthViewModel extends ViewModel {
     private final AuthRepository authRepository;
     private final MutableLiveData<Boolean> loginStatus = new MutableLiveData<>();
     private final MutableLiveData<Boolean> registerStatus = new MutableLiveData<>();
+    private final MutableLiveData<Boolean> userProfileStatus = new MutableLiveData<>();  // Thêm LiveData cho thông tin người dùng
 
     public AuthViewModel(AuthRepository authRepository) {
         this.authRepository = authRepository;
@@ -25,6 +25,11 @@ public class AuthViewModel extends ViewModel {
     // Đăng ký
     public LiveData<Boolean> register(String email, String password) {
         return authRepository.register(email, password);
+    }
+
+    // Kiểm tra và tạo thông tin người dùng trong Firestore
+    public LiveData<Boolean> checkUserProfile() {
+        return authRepository.checkAndCreateUserProfile();  // Gọi phương thức từ AuthRepository
     }
 
     // Factory để khởi tạo ViewModel với AuthRepository
